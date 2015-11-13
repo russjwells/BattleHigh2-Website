@@ -1,0 +1,408 @@
+html{
+	background-color: #2C2929;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #2C2929;
+}
+li {
+	float: left;
+}
+
+nav {
+	float: left;
+	clear: right;
+}
+nav a:link {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Avenir Next";
+}
+nav a:visited{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Avenir Next";
+}
+nav a:hover{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Avenir Next";
+	text-decoration: underline;
+}
+nav a:active{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Avenir Next";
+}
+
+header{
+	background-color: white;
+	float: left;
+	clear: right;
+	width: 100%;
+	height: 150px;
+}
+.navBtn{
+	width: 150px;
+	text-align: center;
+	height: 150px;
+	float: left;
+	vertical-align: middle;
+	line-height: 150px;
+}
+.navBtn:hover{
+	background-color: #1f1f1f;
+}
+#indexLink{
+	float: left;
+	margin: 32px 20px;
+}
+#storyNav{
+	width: 50px;
+}
+#charactersNav{
+
+}
+#buyNav{
+
+}
+#creditsNav{
+
+}
+
+section{
+	float: left;
+	margin: auto;
+	display: block;
+}
+
+h1{
+	color: white;
+	font-family: "Alternate Gothic Com";
+	font-size: 64px;
+	text-align: center;
+
+}
+h2{
+	color: orange;
+	font-family: "Avenir Next";
+	font-size: 29px;
+	font-weight: 600;
+	text-align: center;
+}
+#container{
+	width: 1024px;
+	margin: auto;
+}
+#videoSection{
+	height: 419px;
+	background-color: blue;
+	background-image: url('../../headerimage.png');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+#promoVideo{
+	width: 718px;
+	height: 404px;
+	background-color: #333;
+	margin: 0 auto;
+	margin-top: 110px;
+}
+#infoSection{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 130px;
+}
+#infocopyWrapper{
+	margin: 40 auto;
+	width: 855px;
+	background-color: red; 
+}
+#screenshotsTitle{
+	margin-top: 40px;
+}
+#screenshotSection{
+	width: 100%;
+	padding-bottom: 30px;
+}
+#screenshotSection img{
+	margin: 20px 20px 20px 20px;
+}
+#screenshotWrapper{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 930px;
+	margin-bottom: 60px;
+}
+#buySection{
+	background-color: #2C2929;
+	width: 100%;
+	margin-bottom:40px;
+}
+#buyWrapper{
+	margin: 40 auto;
+	width: 325px;
+}
+#buyBtnWrapper{
+	margin: 40 auto;
+	width: 259px;
+}
+#buyTitle{
+	margin: 20 auto;
+	margin-top: 60px;
+}
+section p{
+	width: 265px;
+	margin-right: 20px;
+	float: left;
+	color: #fff;
+	font-family: "Avenir Next";
+	font-size: 18px;
+}
+.indexLink{
+	margin: 20px;
+}
+#footer{
+	float: left;
+	background-color: #fff;
+	width: 100%;
+	min-height: 200px;
+}
+.footerColumn{
+	float: left;
+	margin: 10 20 20 10;
+}
+#footBuy{
+	width: 300px;
+	margin-left: 82px;
+	margin-top: 66px;
+}
+#footFollow{
+	width: 405px;
+	margin: 66px 90px;
+}
+#footMattrified{
+	float: right;
+	margin-top:20px;
+}
+#fbSocial{
+	float: left;
+	margin-right: 20px;
+}
+#twSocial{
+	float: left;
+}
+#footer h3{
+	font-weight: bold;
+	font-family: "Avenir Next";
+	color: #373535;
+	font-size: 24px;
+}
+#footer li{
+	font-family: "Avenir Next";
+	color: #373535;
+	font-size: 14px;
+	float: none;
+}
+.titleLine{
+	width: 366px;
+	height: 3px;
+	background-color: #fff;
+	margin-top: 30px;
+}
+.lineHolder{
+	float: left;
+	height: 64px;
+	width: 40%;
+	margin: 40px 0px;
+}
+.titleHolder{
+	float: left;
+	height: 64px;
+	width: 20%;
+	margin: 40px 0px;
+}
+#storySection{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 0px;
+	background-image: url('../../storyimage.png');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	min-height: 1500px;
+}
+
+#storycopyWrapper{
+	margin: 40 auto;
+	width: 855px;
+	background-color: red; 
+}
+#storyTitle{
+	width:310px;
+}
+#storySubheader{
+	width: 888px;
+	margin: 0 auto;
+}
+#characterSection{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 0px;
+}
+#charactercopyWrapper{
+	margin: 40 auto;
+	width: 910px;
+}
+.char{
+	width: 142px;
+	height: 151px;
+	margin: 20px;
+	float: left;
+}
+#charData{
+	float: left;
+	width: 390px;
+	height: 400px;
+}
+.catagory{
+	color: orange;
+	text-align: right;
+	font-size: 18px;
+	font-family: "Avenir Next";
+	float: left;
+	width: 180px;
+	margin-right: 10px;
+}
+.attribute{
+	color: white;
+	text-align: left;
+	font-size: 18px;
+	font-family: "Avenir Next";
+	float: left;
+	width: 180px;
+}
+.characterDatum{
+	height: 18px;
+	margin: 10px auto;
+}
+#charPic{
+	float: left;
+	width: 340px;
+	height: 359px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: orange;
+	margin: 21px;
+}
+.bodyCopy{
+	font-size: 18px;
+	font-family: "Avenir Next";
+	color: white;
+}
+#charDesc{
+	float: left;
+	width: 390px;
+	margin-right:20px;
+	margin-bottom: 60px; 
+}
+#charDesc2{
+	float: left;
+	width: 390px;
+}
+#characterLine{
+	background-color: #3E3E3E;
+	height: 3px;
+}
+#indexbuySection{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 0px;
+	padding-bottom: 100px;
+	background-color: #3B3D49;
+}
+#buyoptionsWrapper{
+	margin: 40 auto;
+	width: 855px;
+}
+.buyItem{
+	float: left;
+}
+.smBuyItem{
+	margin: 50px;
+}
+#creditsSection{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 0px;
+}
+#creditscopyWrapper{
+	margin: 40 auto;
+	width: 855px; 
+}
+.credit{
+	float: left;
+	margin-bottom:60px;
+}
+.positionLabel{
+float: left;
+color: orange;
+font-family: "Avenir Next";
+font-size: 18px;
+font-weight: 500;
+padding-top: 10px;
+margin-right: 40px;
+width: 333px;
+}
+.creditBox{
+	float: left;
+	color: white;
+	font-family: "Avenir Next";
+}
+.personCredit{
+	font-size: 28px;
+}
+.personUsername{
+	font-size: 14px;
+}
+.creditsSubhead{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: orange;
+	font-family: "Avenir Next";
+	font-size: 29px;
+	font-weight: 600;
+	margin: 40px 0px;
+}
+.oddCredit{
+	margin: 00 0 0 0;
+	width: 370px;
+	text-align: left;
+}
+#thanks{
+	font-family: "Alternate Gothic Com";
+	font-size: 64px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin: 40 0;
+}
+.credtxt{
+	margin: 7 0;
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: "Avenir Next";
+}
+.credtxt a{
+	color: white;
+}
