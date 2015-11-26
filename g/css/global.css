@@ -189,8 +189,9 @@ section p{
 	margin: 66px 90px;
 }
 #footMattrified{
-	float: right;
+	float: left;
 	margin-top:20px;
+	margin-left: 20px;
 }
 #fbSocial{
 	float: left;
@@ -263,8 +264,20 @@ section p{
 .char{
 	width: 142px;
 	height: 151px;
-	margin: 20px;
+	margin: 17px;
 	float: left;
+
+	border-style: solid;
+	border-color: none;
+}
+.selectedChar{
+	width: 142px;
+	height: 151px;
+	margin: 17px;
+	float: left;
+
+	border-style: solid;
+	border-color: orange;
 }
 #charData{
 	float: left;
@@ -335,7 +348,7 @@ section p{
 	float: left;
 }
 .smBuyItem{
-	margin: 50px;
+	margin: 50px 60px;
 }
 #creditsSection{
 	margin: 0 auto;
