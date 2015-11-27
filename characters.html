@@ -2,7 +2,12 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 		<link rel="stylesheet" type="text/css" href="g/css/global.css">
+
+		<script src="g/script/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="characters.js"></script>
+
 		<title>Battle High 2</title>
+
 	</head>
 	<body>
 		<!--<div id='container'> -->
@@ -23,102 +28,102 @@
 				<div class="lineHolder"><hr class="titleLine" /></div>
 				<div id="charactercopyWrapper">
 					<div id="characterSelect">
-						<div class="char">
-							<img src="character/char01.png" />
+						<div class="char" id="coolguy">
+							<img src="character/char01.png" id="shinji"/>
 						</div>
 						<div class="char">
-							<img src="character/char02.png" />
+							<img src="character/char02.png" id="ryken"/>
 						</div>
 						<div class="char">
-							<img src="character/char03.png" />
+							<img src="character/char03.png" id="principal"/>
 						</div>
 						<div class="char">
-							<img src="character/char04.png" />
+							<img src="character/char04.png" id="michelle"/>
 						</div>
 						<div class="char">
-							<img src="character/char05.png" />
+							<img src="character/char05.png" id="mai"/>
 						</div>
 						<div class="char">
-							<img src="character/char06.png" />
+							<img src="character/char06.png" id="mystery" />
 						</div>
 						<div class="char">
-							<img src="character/char07.png" />
+							<img src="character/char07.png" id="klein" />
 						</div>
 						<div class="char selectedChar">
-							<img src="character/char08.png" />
+							<img src="character/char08.png" id="random"/>
 						</div>
 						<div class="char">
-							<img src="character/char09.png" />
+							<img src="character/char09.png" id="kazuo"/>
 						</div>
 						<div class="char">
-							<img src="character/char10.png" />
+							<img src="character/char10.png" id="jiro"/>
 						</div>
 						<div class="char">
-							<img src="character/char11.png" />
+							<img src="character/char11.png" id="bryan"/>
 						</div>
 						<div class="char">
-							<img src="character/char12.png" />
+							<img src="character/char12.png" id="jada"/>
 						</div>
 						<div class="char">
-							<img src="character/char13.png" />
+							<img src="character/char13.png" id="arvid"/>
 						</div>
 						<div class="char">
-							<img src="character/char14.png" />
+							<img src="character/char14.png" id="hw"/>
 						</div>
 						<div class="char">
-							<img src="character/char15.png" />
+							<img src="character/char15.png" id="khai"/>
 						</div>
 					</div>
 					<hr id="characterLine" />
 					<div id="charData">
 						<div class="characterDatum">
 							<div class="catagory">FULL NAME:</div>
-							<div class="attribute">Jiro Ozawa</div>
+							<div class="attribute" id="fullnameOut">Jiro Ozawa</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">NICKNAMES:</div>
-							<div class="attribute">None</div>
+							<div class="attribute" id="nicknameOut">None</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">CLASS:</div>
-							<div class="attribute">Senior</div>
+							<div class="attribute" id="classOut">Senior</div>
 						</div>
 						<div class="characterDatum">
 							
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">AGE:</div>
-							<div class="attribute">18</div>
+							<div class="attribute" id="ageOut">18</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">HEIGHT:</div>
-							<div class="attribute">5'11"</div>
+							<div class="attribute" id="heightOut">5'11"</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">WEIGHT:</div>
-							<div class="attribute">160 lbs</div>
+							<div class="attribute" id="weightOut">160 lbs</div>
 						</div>
 						<div class="characterDatum">
 							
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">ETHNICITY:</div>
-							<div class="attribute">Earth</div>
+							<div class="attribute" id="ethnicityOut">Earth</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">FIGHTING STYLE:</div>
-							<div class="attribute">Judo</div>
+							<div class="attribute" id="fightingstyleOut">Judo</div>
 						</div>
 						<div class="characterDatum">
 							<div class="catagory">CHARACTERISTICS:</div>
-							<div class="attribute">Calm and cool</div>
+							<div class="attribute" id="characteristicsOut">Calm and cool</div>
 						</div>
 						<div class="characterDatum">
 							
 						</div>
 					</div>
 					<div id="charPic">
-						<img src="character/char01_l.png" />
+						<!-- <img src="character/char01_l.png" id="picOut"/> -->
 					</div>
 					<div id="charDesc" class="bodyCopy">
 						Jiro had defeated his younger brother, Shinji, in a fight, ultimately disbanding the gang he led, The Rivals. Later that same day, Khai, a peer who was obsessed with defeating him, did so, but Jiro didn't care, happy his brother was out of trouble. Once the new principal was elected and students began losing their powers, however, Jiro began receiving strange texts from someone who mysterious referred to him as your brother.

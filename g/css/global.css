@@ -13,6 +13,7 @@ li {
 nav {
 	float: left;
 	clear: right;
+
 }
 nav a:link {
 	color: #000;
@@ -46,6 +47,10 @@ header{
 	clear: right;
 	width: 100%;
 	height: 150px;
+	overflow: visible;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 .navBtn{
 	width: 150px;
@@ -56,7 +61,12 @@ header{
 	line-height: 150px;
 }
 .navBtn:hover{
-	background-color: #1f1f1f;
+	background-color: #CD433E;
+	cursor: pointer;
+
+-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
+-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
+box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
 }
 #indexLink{
 	float: left;
@@ -106,6 +116,13 @@ h2{
 	background-position: center;
 	background-size: cover;
 	width: 100%;
+
+	z-index: -2;
+
+
+-webkit-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
 }
 #promoVideo{
 	width: 718px;
@@ -113,6 +130,10 @@ h2{
 	background-color: #333;
 	margin: 0 auto;
 	margin-top: 110px;
+
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
 }
 #infoSection{
 	margin: 0 auto;
@@ -140,6 +161,16 @@ h2{
 	margin-right: auto;
 	width: 930px;
 	margin-bottom: 60px;
+}
+#screenshotWrapper img{
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+#screenshotWrapper img:hover{
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
 }
 #buySection{
 	background-color: #2C2929;
@@ -269,6 +300,17 @@ section p{
 
 	border-style: solid;
 	border-color: none;
+	cursor: pointer;
+}
+.char:hover{
+	width: 142px;
+	height: 151px;
+	margin: 17px;
+	float: left;
+
+	border-style: yellow;
+	border-color: none;
+	cursor: pointer;
 }
 .selectedChar{
 	width: 142px;
@@ -313,6 +355,8 @@ section p{
 	border-style: solid;
 	border-color: orange;
 	margin: 21px;
+	background-image: url('../../character/char01_l.png');
+	background-size: cover;
 }
 .bodyCopy{
 	font-size: 18px;
