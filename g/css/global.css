@@ -1,44 +1,46 @@
 html{
-	background-color: #2C2929;
+	background-color: #231E1E;
 }
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #2C2929;
+	background-color: #231E1E;
 }
 li {
 	float: left;
 }
 
 nav {
-	float: left;
-	clear: right;
+	/*float: left;*/
+	/*clear: right;*/
+	margin: 0px auto;
+	width: 1200px;
 
 }
 nav a:link {
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 }
 nav a:visited{
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 }
 nav a:hover{
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	text-decoration: underline;
 }
 nav a:active{
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 }
 
 header{
@@ -51,6 +53,8 @@ header{
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+
+	
 }
 .navBtn{
 	width: 150px;
@@ -61,12 +65,11 @@ header{
 	line-height: 150px;
 }
 .navBtn:hover{
-	background-color: #CD433E;
+	background-color: #F3F3F3;
 	cursor: pointer;
-
--webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
--moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
+	-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
+	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.22);
 }
 #indexLink{
 	float: left;
@@ -93,14 +96,14 @@ section{
 
 h1{
 	color: white;
-	font-family: "Alternate Gothic Com";
+	font-family: "Alternate Gothic Com", "Impact";
 	font-size: 64px;
 	text-align: center;
 
 }
 h2{
 	color: orange;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	font-size: 29px;
 	font-weight: 600;
 	text-align: center;
@@ -139,6 +142,10 @@ box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
 	margin: 0 auto;
 	width: 100%;
 	margin-top: 130px;
+
+	/* story bg: */
+	background-image: linear-gradient(-180deg, #231E1E 0%, #2D2929 100%);
+	background-color: #231E1E;
 }
 #infocopyWrapper{
 	margin: 40 auto;
@@ -151,6 +158,8 @@ box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
 #screenshotSection{
 	width: 100%;
 	padding-bottom: 30px;
+
+	background-color: #2D2929;
 }
 #screenshotSection img{
 	margin: 20px 20px 20px 20px;
@@ -175,7 +184,10 @@ box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
 #buySection{
 	background-color: #2C2929;
 	width: 100%;
-	margin-bottom:40px;
+	padding-bottom:60px;
+
+	/* story bg: */
+	background-image: linear-gradient(-180deg, #231E1E 0%, #2D2929 100%);
 }
 #buyWrapper{
 	margin: 40 auto;
@@ -194,25 +206,33 @@ section p{
 	margin-right: 20px;
 	float: left;
 	color: #fff;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	font-size: 18px;
 }
 .indexLink{
 	margin: 20px;
 }
-#footer{
+footer{
+	-webkit-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.75);
 	float: left;
-	background-color: #fff;
 	width: 100%;
-	min-height: 200px;
+	background-color: #FFF;
 }
+#footer{
+	background-color: #fff;
+	width: 1200px;
+	min-height: 200px;
+	margin: 0px auto;
+}
+
 .footerColumn{
 	float: left;
 	margin: 10 20 20 10;
 }
 #footBuy{
 	width: 300px;
-	margin-left: 82px;
 	margin-top: 66px;
 }
 #footFollow{
@@ -233,12 +253,12 @@ section p{
 }
 #footer h3{
 	font-weight: bold;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	color: #373535;
 	font-size: 24px;
 }
 #footer li{
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	color: #373535;
 	font-size: 14px;
 	float: none;
@@ -265,10 +285,17 @@ section p{
 	margin: 0 auto;
 	width: 100%;
 	margin-top: 0px;
-	background-image: url('../../storyimage.png');
+	background-image: 
+	url('../../storyimage.png'),
+	linear-gradient(-180deg, #231E1E 0%, #2D2929 100%);
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	min-height: 1500px;
+
+	/* story bg: */
+	/*background-image: 
+		linear-gradient(-180deg, #231E1E 0%, #2D2929 100%),
+		url('../../storyimage.png');*/
 }
 
 #storycopyWrapper{
@@ -277,7 +304,7 @@ section p{
 	background-color: red; 
 }
 #storyTitle{
-	width:310px;
+	width:460px;
 }
 #storySubheader{
 	width: 888px;
@@ -287,6 +314,9 @@ section p{
 	margin: 0 auto;
 	width: 100%;
 	margin-top: 0px;
+
+	/* story bg: */
+	background-image: linear-gradient(-180deg, #231E1E 0%, #2D2929 100%);
 }
 #charactercopyWrapper{
 	margin: 40 auto;
@@ -330,7 +360,7 @@ section p{
 	color: orange;
 	text-align: right;
 	font-size: 18px;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	float: left;
 	width: 180px;
 	margin-right: 10px;
@@ -339,7 +369,7 @@ section p{
 	color: white;
 	text-align: left;
 	font-size: 18px;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	float: left;
 	width: 180px;
 }
@@ -360,7 +390,7 @@ section p{
 }
 .bodyCopy{
 	font-size: 18px;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	color: white;
 }
 #charDesc{
@@ -383,6 +413,9 @@ section p{
 	margin-top: 0px;
 	padding-bottom: 100px;
 	background-color: #3B3D49;
+	-webkit-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #buyoptionsWrapper{
 	margin: 40 auto;
@@ -398,6 +431,8 @@ section p{
 	margin: 0 auto;
 	width: 100%;
 	margin-top: 0px;
+	padding-bottom: 60px;
+	background-image: linear-gradient(-180deg, #231E1E 0%, #2D2929 100%);
 }
 #creditscopyWrapper{
 	margin: 40 auto;
@@ -410,7 +445,7 @@ section p{
 .positionLabel{
 float: left;
 color: orange;
-font-family: "Avenir Next";
+font-family: "Avenir Next", "Verdana";
 font-size: 18px;
 font-weight: 500;
 padding-top: 10px;
@@ -420,7 +455,7 @@ width: 333px;
 .creditBox{
 	float: left;
 	color: white;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 }
 .personCredit{
 	font-size: 28px;
@@ -433,7 +468,7 @@ width: 333px;
 	width: 100%;
 	text-align: center;
 	color: orange;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 	font-size: 29px;
 	font-weight: 600;
 	margin: 40px 0px;
@@ -444,7 +479,7 @@ width: 333px;
 	text-align: left;
 }
 #thanks{
-	font-family: "Alternate Gothic Com";
+	font-family: "Alternate Gothic Com", "Impact";
 	font-size: 64px;
 	float: left;
 	width: 100%;
@@ -458,7 +493,7 @@ width: 333px;
 	width: 100%;
 	text-align: center;
 	color: white;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", "Verdana";
 }
 .credtxt a{
 	color: white;

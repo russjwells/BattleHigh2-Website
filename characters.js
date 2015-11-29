@@ -29,7 +29,14 @@ $(document).ready(function () {
 		$(this).parent().addClass('selectedChar');
 		//alert(this.id);
 		selectedChar=this.id;
-		//selectedChar = $(this).parent().id;
+
+		if (this.id=="random"){
+			var ran = getNumber();
+			//alert(ran);
+			picNum=01;
+			charNum=1;
+		}else{
+			//selectedChar = $(this).parent().id;
 		//alert(selectedChar);
 		
 
@@ -41,7 +48,13 @@ $(document).ready(function () {
 		//alert(charNum);
 
 		updateDisplay(selectedChar);
+		}
+		
 	});
+
+function getNumber() {
+    return (n = 14 * Math.ceil(Math.random())) === 8? 15: n;
+}
 
 function updateDisplay(character){
 	
@@ -70,6 +83,10 @@ function updateDisplay(character){
 
 });
 
+function selectCharacter(num){
+
+}
+/*
 var shinji = {
 	"fullname" : "Shinji Ozawa",
 	"nickname" : "none",
@@ -89,4 +106,4 @@ var shinji = {
 var ryken = {
 	"fullname" : "Ryken Volynski",
 	"nickname" : "none"
-}
+}*/
