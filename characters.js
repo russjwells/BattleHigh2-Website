@@ -31,55 +31,55 @@ $(document).ready(function () {
 		selectedChar=this.id;
 
 		if (this.id=="random"){
-			var ran = getNumber();
-			//alert(ran);
-			picNum=01;
-			charNum=1;
+			var ran = randomIntFromInterval(1,15);
+			picNum=leftPad(ran,2);
+			charNum=ran;
+			updateDisplay(selectedChar);
 		}else{
-			//selectedChar = $(this).parent().id;
-		//alert(selectedChar);
-		
-
-		//alert(this.src);
-		charNum=this.src.match(/([0-9])\w/)[0];
-		picNum = charNum;
-		charNum = parseInt(charNum);
-		
-		//alert(charNum);
-
-		updateDisplay(selectedChar);
+			charNum=this.src.match(/([0-9])\w/)[0];
+			picNum = charNum;
+			charNum = parseInt(charNum);
+			updateDisplay(selectedChar);
 		}
-		
 	});
 
-function getNumber() {
-    return (n = 14 * Math.ceil(Math.random())) === 8? 15: n;
-}
+	function randomIntFromInterval(min,max)
+	{
+	    return Math.floor(Math.random()*(max-min+1)+min);
+	}
 
-function updateDisplay(character){
-	
-	//$.getJSON('characters.json', function(data){
-	//	alert(data.characters[0].fullname);
-	//});
-	charNum=charNum-1;
-	//alert(charData.characters[charNum].fullname);
+	function leftPad(number, targetLength) {
+	    var output = number + '';
+	    while (output.length < targetLength) {
+	        output = '0' + output;
+	    }
+	    return output;
+	}
 
-	fullnameOut.text(charData.characters[charNum].fullname);
-	nicknameOut.text(charData.characters[charNum].nickname);
-	classOut.text(charData.characters[charNum].hsclass);
-	ageOut.text(charData.characters[charNum].age);
-	heightOut.text(charData.characters[charNum].cheight);
-	weightOut.text(charData.characters[charNum].weight);
-	ethnicityOut.text(charData.characters[charNum].ethnicity);
-	fightingstyleOut.text(charData.characters[charNum].fightingstyle);
-	characteristicsOut.text(charData.characters[charNum].characteristics);
-	
-	var img_l = "url(character/char"+picNum+"_l.png)";
-	//alert(img_l);
-	picOut.css('background-image',img_l);
-	charDesc.text(charData.characters[charNum].desc1);
-	charDesc2.text(charData.characters[charNum].desc2);
-}
+	function updateDisplay(character){
+		
+		//$.getJSON('characters.json', function(data){
+		//	alert(data.characters[0].fullname);
+		//});
+		charNum=charNum-1;
+		//alert(charData.characters[charNum].fullname);
+
+		fullnameOut.text(charData.characters[charNum].fullname);
+		nicknameOut.text(charData.characters[charNum].nickname);
+		classOut.text(charData.characters[charNum].hsclass);
+		ageOut.text(charData.characters[charNum].age);
+		heightOut.text(charData.characters[charNum].cheight);
+		weightOut.text(charData.characters[charNum].weight);
+		ethnicityOut.text(charData.characters[charNum].ethnicity);
+		fightingstyleOut.text(charData.characters[charNum].fightingstyle);
+		characteristicsOut.text(charData.characters[charNum].characteristics);
+		
+		var img_l = "url(character/char"+picNum+"_l.png)";
+		//alert(img_l);
+		picOut.css('background-image',img_l);
+		charDesc.text(charData.characters[charNum].desc1);
+		charDesc2.text(charData.characters[charNum].desc2);
+	}
 
 });
 
